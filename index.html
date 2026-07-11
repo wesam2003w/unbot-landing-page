@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اجعل حلمك حقيقة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شاشة التحميل -->
+    <div class="preloader">
+        <div class="loader">
+            <span>WESAM</span>
+        </div>
+    </div>
+    
+    <!-- مؤشر الماوس المخصص -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- شبكة الخلفية -->
+    <div class="grid-lines"></div>
+    <div id="particles-js"></div>
+    
+    <!-- شريط التنقل -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">WESAM</a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="active">الرئيسية</a></li>
+                    <li><a href="#partners">من نحن</a></li>
+                    <li><a href="#features">المميزات</a></li>
+                    <li><a href="#how-it-works">كيف نعمل</a></li>
+                    <li><a href="#pricing">الأسعار</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button class="login-btn">تسجيل الدخول</button>
+                <button class="signup-btn">إنشاء حساب</button>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- القائمة المتنقلة للهواتف -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#partners">من نحن</a></li>
+            <li><a href="#features">المميزات</a></li>
+            <li><a href="#how-it-works">كيف نعمل</a></li>
+            <li><a href="#pricing">الأسعار</a></li>
+        </ul>
+        
+        <div class="mobile-auth-buttons">
+            <button class="login-btn">تسجيل الدخول</button>
+            <button class="signup-btn">إنشاء حساب</button>
+        </div>
+    </div>
+    
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                <h1>اجعل حلمك حقيقة مع فريقنا</h1>
+                <p>نحن شركة متخصصة في تصميم وتطوير مواقع الويب الحديثة للشركات والأفراد نستخدم أحدث التقنيات لنساعدك على تحقيق حضور قوي على الإنترنت</p>
+                
+                <div class="hero-buttons">
+                    <button class="demo-btn"><i class="fas fa-play-circle"></i> قم بفحص الموقع  </button>
+                    <button class="tutorial-btn" data-modal="video-modal"><i class="fas fa-video"></i> فيديو تعريفي سريع</button>
+                </div>
+                
+                <div class="hero-note">
+                    <div class="pulse-dot"></div>
+                    <p>متاحون دوما لخدمتكم</p>
+                </div>
+            </div>
+            
+            <div class="hero-3d-objects" data-aos="fade-up" data-aos-delay="500">
+                <div class="sphere"></div>
+                <div class="cube"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الشركاء  -->
+    <section id="partners" class="partners-section">
+        <div class="container">
+            <div class="partners-content" data-aos="fade-up">
+                <h2>من المواقع المشاريع الى المشاريع الفردية</h2>
+                <p>نحن ننجز موقعك الخاص لعملك او لشركتك بدقة واحترافية</p>
+                
+                <div class="partners-logos">
+                    <div class="center-cube">
+                        <div class="cube-3d"></div>
+                    </div>
+                    
+                    <div class="logo-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+                    </div>
+                    
+                    <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Unity_Technologies_logo.svg" alt="Unity">
+                    </div>
+                    
+                    <div class="logo-item" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Unreal_Engine_logo.svg" alt="Unreal">
+                    </div>
+                    
+                    <div class="logo-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta">
+                    </div>
+                </div>
+                
+                <div class="partners-buttons">
+                    <button class="btn-outline">تعرف على العديد من المزايا</button>
+                    <button class="btn-outline">عرص جميع الميزات</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم فحص المستخدمين  -->
+    <section id="verification" class="verification-section">
+        <div class="container">
+            <div class="verification-content" data-aos="fade-up">
+                <h2>نخطط لكل مستخدم</h2>
+                <p>نحن نضمن أن جميع المستخدمين راضون مما يوفر تجربة سلسة للموقع</p>
+            </div>
+            
+            <div class="verification-details">
+                <div class="verification-text" data-aos="fade-right">
+                    <h3>تعرف علينا  </h3>
+                    <h4>انظر كيف نساعدك!</h4>
+                    <p>نضع الجودة في المقدمة ونعتمد على معايير عالمية في بناء المواقع من حيث الأداء، الأمان، وتجربة المستخدم. سواء كنت شركة ناشئة أو مؤسسة تبحث عن التوسع الرقمي، نحن هنا لدعمك.</p>
+                    <button class="btn-primary"><i class="fas fa-arrow-right"></i> تعرف على المزيد</button>
+                </div>
+                
+                <div class="verification-animation" data-aos="fade-left">
+                    <div class="particles-container">
+                        <div class="particles-wrapper"></div>
+                        <div class="particles-base"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="verification-footer">
+                <p>حماية الخصوصية للموقع</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم عرض الجوال  -->
+    <section id="mobile" class="mobile-section">
+        <div class="container">
+            <div class="mobile-showcase">
+                <div class="scrolling-text">
+                    <div class="text-wrapper">
+                        <span>ارتقِ بلعبتك</span>
+                        <span>ارتقِ بلعبتك</span>
+                        <span>ارتقِ بلعبتك</span>
+                    </div>
+                </div>
+                
+                <div class="mobile-hand" data-aos="zoom-in">
+                    <img src="https://www.pngall.com/wp-content/uploads/5/Holding-Smartphone-PNG-Free-Image.png" alt="Hand holding phone" class="hand-img">
+                    <div class="phone-screen">
+                        <div class="phone-content">
+                            <h3>نتحقق من كل مستخدم</h3>
+                            <p>نحن نضمن أن جميع المستخدمين حقيقيون</p>
+                            <h4>تعرف على UNBOT</h4>
+                            <p>انظر كيف نساعدك!</p>
+                            <button>تعرف على المزيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الميزات  -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-number">01.</div>
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>تصميم مواقع احترافية (Custom Web Design)</h3>
+                    <p>نقوم بتصميم واجهات مستخدم جذابة ومتوافقة مع الهواتف، بأحدث المعايير الجمالية</p>
+                    <div class="feature-arrow">
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-number">02.</div>
+                    <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>تطوير مواقع ديناميكية (Web Development)</h3>
+                    <p>بناء مواقع تعتمد على تقنيات قوية مثل HTML, CSS, JavaScript, PHP, React, Laravel وغيرها </p>
+                    <div class="feature-arrow">
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-number">03.</div>
+                    <div class="feature-icon"><i class="fas fa-sliders-h"></i></div>
+                    <h3>المتاجر الإلكترونية (E-Commerce)  </h3>
+                    <p>ننشئ متاجر إلكترونية متكاملة بميزات دفع آمنة، وربط مع أنظمة الشحن</p>
+                    <div class="feature-arrow">
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-number">04.</div>
+                    <div class="feature-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>تحسين أداء المواقع (SEO & Speed Optimization)</h3>
+                    <p>نحسّن ترتيب موقعك في نتائج البحث ونجعل تحميله أسرع من المنافسين</p>
+                    <div class="feature-arrow">
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-number">05.</div>
+                    <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>دعم وصيانة (Maintenance & Support)</h3>
+                    <p>نقدم خطط صيانة للمواقع تشمل النسخ الاحتياطي، الحماية، والتحديثات الدورية</p>
+                    <div class="feature-arrow">
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-number">06.</div>
+                    <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>التسويق الرقمي وإدارة المحتوى (Digital Marketing & Content Management)</h3>
+                    <p>نوفر استراتيجيات تسويق متكاملة لتعزيز حضور علامتك التجارية عبر الإنترنت، بدءاً من تحسين محركات البحث إلى إدارة الحملات الإعلانية وإعداد المحتوى الجذاب الذي يلبي احتياجات جمهورك</p>
+                    <div class="feature-arrow">
+                        <i class="fas fa-arrow-up-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم التسجيل في قائمة الانتظار  -->
+    <section id="waitlist" class="waitlist-section">
+        <div class="container">
+            <div class="waitlist-content" data-aos="fade-up">
+                <h2>سجل في قائمة الانتظار</h2>
+                <p>يمكنك التسجيل عبر اضافة بريدك الالكتروني</p>
+                
+                <form class="waitlist-form">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    <button type="submit">سجل الآن</button>
+                </form>
+                
+                <p class="waitlist-note">يمكن الحصول على خدمتنا بسهولة في <span class="highlight">المواقع </span> الحالية الخاصة بك</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم كيفية عمل الموقع  -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="how-it-works-content">
+                <div class="how-it-works-text" data-aos="fade-right">
+                    <h2>تعرف على كيفية عملنا  </h2>
+                    <p>يمكننا تطوير موقعك الحالي الى موقع احترافي وجذاب ل الزباءن.</p>
+                    <button class="btn-primary">ابدأ معنا <i class="fas fa-arrow-right"></i></button>
+                </div>
+                
+                <div class="how-it-works-visual" data-aos="fade-left">
+                    <div class="platform-3d">
+                        <div class="platform-item">المواصلة في العمل </div>
+                        <div class="platform-item">التدقيق بالتفاصيل</div>
+                        <div class="platform-item">خدمة عملاء احترافية</div>
+                        <div class="platform-item">دعم بعد التسليم</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="how-it-works-steps">
+                <div class="step-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <h4>اهلا بك مع فريقنا</h4>
+                    <p>يمكنك التواسل مع اي عضو في الفريق</p>
+                </div>
+                
+                <div class="step-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <h4>تحديثات</h4>
+                    <p>لا تتردد في طلب التحديثات</p>
+                </div>
+                
+                <div class="step-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <h4>العمل</h4>
+                    <p>عملنا ك فريق ذو خبرات مختلفة</p>
+                </div>
+                
+                <div class="step-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <h4>الانضمام</h4>
+                    <p>يمكنك الانضمام لفريقنا بمجرد التواصل معنا</p>
+                </div>
+                
+                <div class="step-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">05</div>
+                    <h4>دعمك</h4>
+                    <p>يهمنا تقييم العملاء لنا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم اللعب العادل -->
+    <section id="fair-play" class="fair-play-section">
+        <div class="container">
+            <div class="fair-play-header" data-aos="fade-up">
+                <h2>اسعارنا</h2>
+                <p>الاصعار تبدأ بحسب حجم المشروع</p>
+            </div>
+            
+            <div class="fair-play-cards">
+                <div class="fair-play-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-tag"></div>
+                    <h3>موقع كامل لشركة</h3>
+                    <p>يحدد لاحقا</p>
+                </div>
+                
+                <div class="fair-play-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-tag"></div>
+                    <h3>موقع فردي</h3>
+                    <p>يحدد لاحقا</p>
+                </div>
+                
+                <div class="fair-play-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-tag"></div>
+                    <h3>موقع الكتروني</h3>
+                    <p>يحدد لاحقا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الذكاء الاصطناعي  -->
+    <section id="ai" class="ai-section">
+        <div class="container">
+            <div class="ai-content">
+                <div class="ai-logos" data-aos="fade-right">
+                    <div class="unbot-logo">
+                        <div class="logo-circle">
+                            <span>WE<br>SAM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="partner-logos">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Unity_Technologies_logo.svg" alt="Unity" class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Unreal_Engine_logo.svg" alt="Unreal" class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="partner-logo">
+                    </div>
+                </div>
+                
+                <div class="ai-text" data-aos="fade-left">
+                    <h2>اضافة ذكاء اسطناعي لموغك</h2>
+                    <h3>انظر كيف يساعدك!</h3>
+                    <p>يمكننا اضافة ذكاء اصطناعي لموقعك ليسهل عليك خدمة العملاء</p>
+                    
+                    <div class="ai-features">
+                        <div class="ai-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <p>التعلم المستمر</p>
+                        </div>
+                        
+                        <div class="ai-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <p>قابل للتحديث</p>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary">اطلبه الان  <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- التذييل  -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3>WESAM</h3>
+                    <p>يمكن دمج خدمتنا بسهولة في منصة الألعاب الحالية الخاصة بك، مما يجعلها سهلة الاستخدام وخالية من المتاعب للتنفيذ.</p>
+                    <button class="btn-primary">ابدأ الآن <i class="fas fa-arrow-right"></i></button>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>الرئيسية</h4>
+                        <ul>
+                            <li><a href="#">خدماتنا</a></li>
+                            <li><a href="#">منتجاتنا</a></li>
+                            <li><a href="#">المدونة</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">منصتنا</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>من نحن</h4>
+                        <ul>
+                            <li><a href="#">خدماتنا</a></li>
+                            <li><a href="#">منتجاتنا</a></li>
+                            <li><a href="#">المدونة</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">منصتنا</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>دليل المستخدم</h4>
+                        <ul>
+                            <li><a href="#">خدماتنا</a></li>
+                            <li><a href="#">منتجاتنا</a></li>
+                            <li><a href="#">المدونة</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">منصتنا</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>الأسعار</h4>
+                        <ul>
+                            <li><a href="#">خدماتنا</a></li>
+                            <li><a href="#">منتجاتنا</a></li>
+                            <li><a href="#">المدونة</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">منصتنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    <p>جميع الحقوق محفوظة &copy; WESAM 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- زر التمرير للأعلى -->
+    <div id="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- النوافذ المنبثقة -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>تسجيل الدخول</h2>
+            <form>
+                <div class="form-group">
+                    <label for="login-email">البريد الإلكتروني</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="login-password">كلمة المرور</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">تسجيل الدخول</button>
+                </div>
+                
+                <div class="form-footer">
+                    <a href="#">نسيت كلمة المرور؟</a>
+                    <p>ليس لديك حساب؟ <a href="#" data-modal="signup-modal">إنشاء حساب</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>إنشاء حساب</h2>
+            <form>
+                <div class="form-group">
+                    <label for="signup-name">الاسم الكامل</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-email">البريد الإلكتروني</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signup-password">كلمة المرور</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">إنشاء حساب</button>
+                </div>
+                
+                <div class="form-footer">
+                    <p>لديك حساب بالفعل؟ <a href="#" data-modal="login-modal">تسجيل الدخول</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div id="video-modal" class="modal">
+        <div class="modal-content video-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="video-container">
+                <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <!-- مكتبات JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
