@@ -1,113 +1,95 @@
-# دليل استخدام وتعديل موقع UNBOT
+# UNBOT Landing Page
 
-هذا الدليل يشرح كيفية استخدام وتعديل موقع UNBOT الذي تم إنشاؤه بناءً على التصميم المطلوب. الموقع مبني باستخدام HTML و CSS و JavaScript مع تأثيرات حركية متقدمة ومتجاوب مع جميع أحجام الشاشات.
+A modern and responsive landing page concept created to showcase my front-end development skills using HTML, CSS, and JavaScript.
 
-## محتويات الملفات
-
-الموقع يتكون من ثلاثة ملفات رئيسية:
-
-1. **index.html**: هيكل الموقع وعناصره
-2. **styles.css**: أنماط التصميم وتنسيق العناصر
-3. **script.js**: التأثيرات الحركية والتفاعلية
-
-## كيفية تشغيل الموقع
-
-1. قم بتنزيل جميع الملفات في نفس المجلد
-2. افتح ملف `index.html` في أي متصفح ويب حديث
-3. للحصول على أفضل تجربة، يُفضل استخدام متصفح Chrome أو Firefox أو Edge
-
-## أقسام الموقع
-
-الموقع يتكون من الأقسام التالية:
-
-1. **القسم الرئيسي (Hero Section)**: يعرض العنوان الرئيسي مع عناصر ثلاثية الأبعاد متحركة
-2. **قسم الشركاء (Partners Section)**: يعرض شعارات الشركات المتعاونة (Apple, Unity, Unreal, Meta)
-3. **قسم فحص المستخدمين (Verification Section)**: يتضمن تأثير تساقط الكرات/الجزيئات
-4. **قسم عرض الجوال (Mobile Section)**: يعرض صورة يد تحمل هاتف مع نص متحرك في الخلفية
-5. **قسم الميزات (Features Section)**: يعرض 6 ميزات رئيسية في شبكة 2×3
-6. **قسم التسجيل (Waitlist Section)**: يتضمن نموذج للتسجيل في قائمة الانتظار
-7. **قسم كيفية العمل (How It Works Section)**: يشرح آلية عمل المنصة مع خطوات مرقمة
-8. **قسم اللعب العادل (Fair Play Section)**: يعرض بطاقات معلومات عن اللعب العادل
-9. **قسم الذكاء الاصطناعي (AI Section)**: يعرض شعار UNBOT مع شعارات التكامل
-10. **التذييل (Footer)**: يتضمن روابط وأقسام متعددة ووسائل التواصل الاجتماعي
-
-## التأثيرات الحركية الرئيسية
-
-الموقع يتضمن العديد من التأثيرات الحركية المتقدمة:
-
-1. **مؤشر ماوس مضيء**: مؤشر مخصص مع هالة ضوئية تتبع حركة الماوس
-2. **تأثير تساقط الجزيئات**: في قسم "We Check Every User" تتساقط الكرات/الجزيئات من أعلى إلى أسفل
-3. **نص متحرك أفقياً**: في قسم عرض الجوال، يتحرك النص "ارتقِ بلعبتك" من اليمين إلى اليسار بشكل مستمر
-4. **ظهور تدريجي للعناصر**: عند التمرير، تظهر العناصر بتأثيرات حركية مختلفة (fade, zoom, slide)
-5. **عناصر ثلاثية الأبعاد متحركة**: الكرة والمكعب في القسم الرئيسي تتفاعل مع حركة الماوس
-6. **تأثيرات التوهج والظلال**: تأثيرات ضوئية متحركة على العناصر الرئيسية
-7. **تأثير تموج الأزرار**: عند النقر على الأزرار يظهر تأثير تموج دائري
-
-## كيفية تعديل الموقع
-
-### تعديل المحتوى النصي
-
-1. افتح ملف `index.html` في أي محرر نصوص (مثل VS Code أو Notepad++)
-2. ابحث عن النص المراد تغييره وقم بتعديله مباشرة
-3. احفظ الملف وأعد تحميل الصفحة في المتصفح لمشاهدة التغييرات
-
-### تعديل الألوان والمتغيرات
-
-1. افتح ملف `styles.css` في محرر النصوص
-2. في بداية الملف، ستجد قسم المتغيرات الأساسية (`:root`)
-3. قم بتعديل قيم الألوان والمتغيرات حسب الحاجة:
-   ```css
-   :root {
-       --primary-color: #6c5ce7; /* اللون الرئيسي */
-       --secondary-color: #a29bfe; /* اللون الثانوي */
-       --accent-color: #00cec9; /* لون التأكيد */
-       --background-dark: #13111c; /* لون الخلفية الداكن */
-       --background-purple: #2d1b69; /* لون الخلفية الأرجواني */
-       /* ... باقي المتغيرات ... */
-   }
-   ```
-
-### تعديل الصور والشعارات
-
-1. استبدل روابط الصور في ملف `index.html` بروابط الصور الجديدة أو المسارات المحلية
-2. للشعارات، ابحث عن عناصر `<img>` في قسم الشركاء وقسم الذكاء الاصطناعي
-
-### تعديل التأثيرات الحركية
-
-1. افتح ملف `script.js` في محرر النصوص
-2. الملف منظم بوظائف منفصلة لكل تأثير حركي، مثل:
-   - `initCustomCursor()`: لتعديل مؤشر الماوس المضيء
-   - `initParticlesFall()`: لتعديل تأثير تساقط الجزيئات
-   - `initScrollingText()`: لتعديل النص المتحرك
-   - `init3DObjects()`: لتعديل العناصر ثلاثية الأبعاد
-
-### إضافة أقسام جديدة
-
-1. انسخ هيكل قسم مشابه من ملف `index.html`
-2. قم بتعديل المحتوى والعناصر حسب الحاجة
-3. أضف أنماط CSS الخاصة بالقسم الجديد في ملف `styles.css`
-4. إذا كان القسم يحتاج إلى تأثيرات حركية خاصة، أضفها في ملف `script.js`
-
-## المكتبات الخارجية المستخدمة
-
-الموقع يستخدم المكتبات التالية:
-
-1. **Font Awesome**: لعرض الأيقونات
-2. **AOS (Animate On Scroll)**: لتأثيرات الظهور عند التمرير
-3. **Particles.js**: لتأثيرات الجزيئات في الخلفية
-4. **Google Fonts (Cairo)**: للخطوط العربية
-
-## نصائح للتحسين
-
-1. **تحسين الصور**: ضغط الصور وتحويلها إلى تنسيق WebP لتحسين سرعة التحميل
-2. **تحسين الأداء**: تقليل استخدام التأثيرات الثقيلة على الأجهزة ذات الأداء المنخفض
-3. **إضافة محتوى حقيقي**: استبدال نصوص Lorem Ipsum بمحتوى حقيقي
-4. **إضافة تحليلات**: دمج أدوات تحليل مثل Google Analytics لتتبع سلوك المستخدمين
-5. **تحسين SEO**: إضافة وصف ووسوم تعريفية للموقع لتحسين ظهوره في محركات البحث
-
-## الدعم والمساعدة
-
-إذا واجهتك أي مشكلة أو كنت بحاجة إلى مساعدة في تعديل الموقع، يمكنك التواصل معنا للحصول على الدعم اللازم.
+🌐 **Live Demo**
+https://wesam2003w.github.io/unbot-landing-page/
 
 ---
 
+## 📌 Overview
+
+UNBOT is a modern UI/UX landing page designed as a portfolio project to demonstrate responsive web design, smooth animations, interactive effects, and clean front-end development practices.
+
+The project focuses on creating a visually appealing user experience with modern web technologies.
+
+---
+
+## ✨ Features
+
+- Responsive design for desktop, tablet, and mobile devices
+- Modern UI/UX design
+- Interactive 3D Hero Section
+- Smooth scrolling animations
+- Animated particle effects
+- Custom animated cursor
+- Interactive buttons and hover effects
+- Mobile-friendly layout
+- Clean and organized code structure
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- AOS (Animate On Scroll)
+- Font Awesome
+- Google Fonts
+
+---
+
+## 📁 Project Structure
+
+```
+unbot-landing-page/
+│
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone <PRIVATE_URL>
+```
+
+Open `index.html` in your browser.
+
+---
+
+## 🎯 Purpose
+
+This project was created as part of my software development portfolio to demonstrate my ability to build modern, responsive, and interactive front-end websites.
+
+---
+
+## 🔮 Future Improvements
+
+- Dark / Light mode
+- Better accessibility
+- Performance optimization
+- SEO improvements
+- More interactive UI components
+
+---
+
+## 👨‍💻 Author
+
+**Wesam Sabih**
+
+GitHub:
+<PRIVATE_URL>
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
