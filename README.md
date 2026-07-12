@@ -1,4 +1,4 @@
-![UNBOT Preview](assets/images/preview.png)
+![UNBOT Preview](assets/images/preview.jpeg)
 # UNBOT Landing Page
 
 A modern and responsive landing page concept created to showcase my front-end development skills using HTML, CSS, and JavaScript.
